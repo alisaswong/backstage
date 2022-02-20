@@ -32,12 +32,14 @@ import { TechDocsEntityMetadata, TechDocsMetadata } from '../../../types';
 type TechDocsReaderPageValue = {
   isReady: boolean;
   onReady: () => void;
+  path: string;
   entityRef: EntityName;
   entityMetadataValue?: TechDocsEntityMetadata | undefined;
   techdocsMetadataValue?: TechDocsMetadata | undefined;
 };
 
 const TechDocsReaderPageContext = createContext<TechDocsReaderPageValue>({
+  path: '',
   entityRef: { kind: '', namespace: '', name: '' },
   isReady: false,
   onReady: () => {},
@@ -73,6 +75,7 @@ export const TechDocsReaderPageProvider = ({
     entityRef,
     entityMetadataValue,
     techdocsMetadataValue,
+    path: params['*'],
     isReady: true,
     onReady: () => {},
   };

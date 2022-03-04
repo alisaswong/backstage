@@ -1,5 +1,16 @@
 # @backstage/plugin-techdocs
 
+## 0.15.1
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/plugin-catalog@0.10.0
+  - @backstage/plugin-catalog-react@0.9.0
+  - @backstage/core-components@0.9.1
+  - @backstage/catalog-model@0.13.0
+  - @backstage/plugin-search@0.7.3
+
 ## 0.15.0
 
 ### Minor Changes

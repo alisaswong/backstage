@@ -1,5 +1,11 @@
 # @backstage/plugin-catalog-common
 
+## 0.2.2
+
+### Patch Changes
+
+- b1aacbf96a: Applied the fix for the `/alpha` entry point resolution that was part of the `v0.70.1` release of Backstage.
+
 ## 0.2.1
 
 ### Patch Changes
